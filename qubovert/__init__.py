@@ -19,7 +19,8 @@ have a one-to-one mapping to classical Ising problems, and most optimization
 problems are formatted in QUBO form when the solver is a quantum computer.
 See ``qubovert.__all__`` for useful functionality, ``qubovert.problems__all__``
 for problems defined, and ``qubovert.utils.__all__`` for some utility
-functions, and ``qubovert.sat.__all__`` for the satisfiability library.
+functions, and ``qubovert.sat.__all__`` for the satisfiability library. See
+``qubovert.program`` for ``qubovert`` programming ability.
 
 """
 
@@ -52,6 +53,7 @@ __all__ = (
 
 from . import sat
 from . import problems
+from . import program
 
 BINARY_MODELS = QUBO, PUBO, HOBO, utils.QUBOMatrix, utils.PUBOMatrix
 SPIN_MODELS = Ising, HIsing, HOIO, utils.IsingMatrix, utils.HIsingMatrix
